@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
-import { VideoGrid } from "@/components/VideoGrid";
+import VideoGrid from "@/components/VideoGrid";
 import { Search } from "lucide-react";
 
 const Explore = () => {
@@ -34,13 +34,7 @@ const Explore = () => {
               <Button variant="link" className="text-purple-600">Показать все</Button>
             </div>
             
-            <VideoGrid 
-              videos={[
-                { id: '1', title: 'Мастер-класс по монтажу', author: 'Анна К.', views: 15432, duration: '18:22', thumbnail: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-4.0.3' },
-                { id: '2', title: 'Секреты освещения в домашней студии', author: 'Максим Д.', views: 8765, duration: '12:45', thumbnail: 'https://images.unsplash.com/photo-1574717024453-354056aad482?ixlib=rb-4.0.3' },
-                { id: '3', title: 'Выбираем оборудование для блога', author: 'Елена В.', views: 23105, duration: '24:18', thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3' },
-              ]}
-            />
+            <VideoGrid />
           </div>
           
           <div className="mb-10">
@@ -49,13 +43,7 @@ const Explore = () => {
               <Button variant="link" className="text-purple-600">Показать все</Button>
             </div>
             
-            <VideoGrid 
-              videos={[
-                { id: '4', title: 'Урок анимации для начинающих', author: 'Павел М.', views: 5432, duration: '34:10', thumbnail: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3' },
-                { id: '5', title: 'Как записать качественный звук дома', author: 'Ирина Л.', views: 7621, duration: '15:46', thumbnail: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3' },
-                { id: '6', title: 'Основы цветокоррекции видео', author: 'Сергей К.', views: 12543, duration: '22:30', thumbnail: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3' },
-              ]}
-            />
+            <VideoGrid />
           </div>
         </div>
       </main>
